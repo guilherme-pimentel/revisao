@@ -1,0 +1,124 @@
+body {
+    display: grid;
+    grid-template-areas: "header header header header header"
+                         "nav nav nav nav nav"
+                         "section section sectionn sectionn aside"
+                         "footer footer footer footer footer";
+
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+
+    
+                         
+}
+header{
+    grid-area: header;
+    background-color: #ccc;
+  
+}
+
+#i1{
+    grid-area: header;
+    height: 100px;
+    align-self: center;
+    padding: 5px;
+}
+
+#iconlink{
+    grid-area: header;
+    justify-self: end;
+    align-self: end;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+#i2{
+    height: 40px;
+}
+
+h1{
+    grid-area: header;
+    font-size: 35px;
+    align-self: center;
+    justify-self: left;
+    padding-left: 140px;
+}
+
+#a2{
+    margin-top: 200px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #eee;
+    padding: 10px;
+ 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #ccc;
+    height: 500px;
+
+}
+
+.descript{
+    justify-self: center;
+}
+
+button{
+
+    background-color: #851eb4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: center;
+    bottom: 0;
+}
+
+.p2
+{
+    width: 400px;
+}
+
+
+section{
+    grid-area: section;
+    padding: 10px;
+    padding-bottom: 90px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #ccc;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #696969;
+    
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}

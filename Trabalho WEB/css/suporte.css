@@ -1,0 +1,114 @@
+body {
+    display: grid;
+    grid-template-areas: "header header header header header"
+                         "nav nav nav nav nav"
+                         "section section sectionn sectionn aside"
+                         "footer footer footer footer footer";
+
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+
+    
+                         
+}
+header{
+    grid-area: header;
+    background-color: #ccc;
+  
+}
+
+#i1{
+    grid-area: header;
+    height: 100px;
+    align-self: center;
+    padding: 5px;
+}
+
+#iconlink{
+    grid-area: header;
+    justify-self: end;
+    align-self: end;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+#i2{
+    height: 40px;
+}
+
+h1{
+    grid-area: header;
+    font-size: 35px;
+    align-self: center;
+    justify-self: left;
+    padding-left: 140px;
+}
+
+#a2{
+    margin-top: 200px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #eee;
+    padding: 10px;
+ 
+}
+
+section {
+    grid-area: section;
+    padding: 10px;
+    padding-bottom: 90px;
+}
+
+
+#af{
+    grid-area: sectionn;
+    background-color: #f9f9f9;
+    padding: 10px;
+
+}
+
+
+aside {
+    grid-area: aside;
+    background-color: #f9f9f9;
+    padding: 10px;
+    
+}
+
+footer {
+    grid-area: footer;
+    background-color: #ccc;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #696969;
+    
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+/*Estilos adicionais para fins de ilustração*/
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}

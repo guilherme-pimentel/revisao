@@ -1,0 +1,148 @@
+body {
+    display: grid;
+    grid-template-areas: "header header header header header"
+                         "nav nav nav nav nav"
+                         "section section section section section"
+                         "footer footer footer footer footer";
+
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+ 
+    
+                         
+}
+header{
+    grid-area: header;
+    background-color: #ccc;
+}
+
+#i1{
+    grid-area: header;
+    height: 100px;
+    align-self: center;
+    padding: 5px;
+}
+
+#iconlink{
+    grid-area: header;
+    justify-self: end;
+    align-self: end;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+#i2{
+    height: 40px;
+}
+
+section{
+    grid-area: section;
+    padding: 10px;
+    padding-bottom: 90px;
+}
+
+
+
+.sobre{
+    display: grid;
+    grid-template-areas: "a1 a2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+
+}
+
+.sobre2{
+    display: grid;
+    grid-template-areas: "a3 a4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.jaguncio{
+    grid-area: a2;
+
+    font-family: bold;
+}
+
+.jaguncio2{
+    grid-area: a3;
+
+    font-family: bold;
+    font-size: 20px;
+}
+
+#sb1 {
+    grid-area: a1;
+    width: 644px;    
+    height: 425px;
+    align-self: center;
+    justify-self: center;
+ }
+
+ #sb2{
+    grid-area: a4;
+    width: 644px;    
+    height: 425px;
+    align-self: center;
+    justify-self: center;
+ }
+
+ #p1{
+    margin-top: 100px;
+    font-size: 20;
+ }
+
+ h2{
+    font-size: 30px;
+ }
+
+h1{
+    grid-area: header;
+    font-size: 35px;
+    align-self: center;
+    justify-self: left;
+    padding-left: 140px;
+}
+
+
+nav {
+    grid-area: nav;
+    background-color: #eee;
+    padding: 10px;
+ 
+}
+
+footer {
+    grid-area: footer;
+    background-color: #ccc;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #696969;
+    
+}
+
+/*Estilos adicionais para fins de ilustração*/
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
